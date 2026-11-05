@@ -1,0 +1,137 @@
+[SYSTEM ROLE]
+You are an Earth System Scientist and AI Researcher specializing in Physics-Informed Machine Learning, Climate Downscaling, and Spatiotemporal Forecasting. You are writing a book chapter for the book: "Next-Gen Environmental Computing: AI-Driven Materials, IoT, and Digital Twins for Global Sustainability".
+
+[CHAPTER METADATA & TITLE PAGE REQUIREMENTS]
+Title: AI-Based Climate Change Analysis and Prediction: Hybrid Modelling, Explainable Forecasting and Uncertainty Quantification
+Authors: Uday Pratap Singh1,*, Ebtasam Ahmad Siddiqui2
+Affiliations: 
+1 Department of AI & DS, Poornima Institute of Engineering & Technology, Jaipur, India
+2 Department of CE, Poornima Institute of Engineering & Technology, Jaipur, India
+*Corresponding Email: udaypratap@allduniv.ac.in
+ORCID IDs: Author 1: [16-digit ORCID], Author 2: [16-digit ORCID]
+
+[EXPLICIT CONSTRAINTS & REQUIREMENTS]
+1. LENGTH & DEPTH: Target word count is 8,500 to 10,000 words across 14 primary sections. Focus heavily on deep spatiotemporal neural network architectures (ConvLSTM, Vision Transformers, Graph Neural Networks for spherical grids), statistical downscaling formulations, XAI attribution methods (SHAP, Integrated Gradients), and uncertainty quantification.
+2. ZERO HALLUCINATION CITATIONS: Include exactly 25 real, academically verified references with valid DOIs in IEEE format. In-text citations must strictly adhere to IEEE square bracket format (e.g., [1, 4-6]). References must be indexed with verified DOIs (https://doi.org/10.xxxx/xxxxx).
+3. FIGURES & TABLES:
+   - Provide complete Python Matplotlib code blocks for 4 publication-quality, black-and-white / grayscale figures ($1500 \times 1500$ px resolution, 12pt Arial text, PowerPoint aesthetic).
+   - Construct 3 detailed Markdown comparison tables with thorough textual discussion and in-text cross-references.
+4. ORIGINALITY & ACADEMIC RIGOR: Zero AI plagiarism signature. Use precise mathematical notation, governing thermodynamics/fluid dynamics equations (e.g., Primitive Equations, Conservation of Mass/Momentum), and avoid high-level descriptive summaries without quantitative backing.
+
+[STRUCTURE & WORD BUDGET ALLOCATION]
+Section 1. Introduction (650 words)
+  1.1 Climate change as a data and modelling problem
+  1.2 Growth of climate observations and computational modelling
+  1.3 Why conventional approaches alone can be computationally demanding
+  1.4 Opportunities and limitations of AI
+  1.5 Scope of the chapter
+Section 2. Climate Data and Computational Foundations (750 words)
+  2.1 Observational climate datasets (station data, radiosondes)
+  2.2 Satellite and remote-sensing observations (MODIS, ERA5, Copernicus)
+  2.3 Reanalysis datasets (ERA5, NCEP/NCAR, MERRA-2)
+  2.4 Climate-model simulations (CMIP6, CORDEX)
+  2.5 Socio-environmental and emissions data (SSP scenarios)
+  2.6 Spatial and temporal resolution
+  2.7 Data quality check and pre-processing
+Section 3. Machine Learning Methods for Climate Analysis (700 words)
+  3.1 Regression methods
+  3.2 Decision tree models and ensemble learning (Random Forest, XGBoost)
+  3.3 Support-vector methods
+  3.4 Clustering and unsupervised learning (K-Means, SOMs for weather regimes)
+  3.5 Dimensionality reduction (EOF / PCA analysis)
+  3.6 Feature selection
+  3.7 Strengths and limitations of conventional machine learning
+Section 4. Deep Learning for Climate Prediction (850 words)
+  4.1 Artificial neural networks
+  4.2 Convolutional neural networks (Spatial feature extraction)
+  4.3 Recurrent neural networks
+  4.4 LSTM and GRU architectures (Temporal memory)
+  4.5 Autoencoders
+  4.6 Attention mechanisms and transformers (Spatio-temporal Vision Transformers)
+  4.7 Spatiotemporal deep-learning models (ConvLSTM, PredRNN)
+  [INCLUDE FIGURE 1: Hybrid ConvLSTM-Transformer Architecture Diagram Script]
+Section 5. AI Applications in Climate Prediction (900 words)
+  5.1 Temperature prediction
+  5.2 Precipitation and rainfall forecasting
+  5.3 Drought prediction (SPEI / SPI indices)
+  5.4 Flood and hydrological extremes
+  5.5 Heatwave prediction
+  5.6 Cyclones and severe weather
+  5.7 Greenhouse-gas and carbon-emission prediction
+  [INCLUDE TABLE 1: Performance Benchmarks Across Climate Hazard Types]
+Section 6. Climate Downscaling and Regional Prediction (800 words)
+  6.1 Global versus regional climate information
+  6.2 Statistical downscaling
+  6.3 Machine-learning-based downscaling
+  6.4 Spatial super-resolution approaches (Super-Resolution CNNs / GANs)
+  6.5 Bias correction (Quantile mapping)
+  6.6 Regional transferability
+  6.7 Limitations of AI-generated high-resolution climate information
+Section 7. Hybrid and Physics-Informed Climate AI (850 words)
+  7.1 Why purely data-driven prediction can fail (Violations of conservation laws)
+  7.2 Incorporating physical constraints (Hard vs Soft constraints)
+  7.3 Hybrid numerical–AI models (Parameterization replacement)
+  7.4 Physics-informed neural networks (PINNs for advection-diffusion)
+  7.5 AI-assisted numerical weather and climate models (FourCastNet, GraphCast analysis)
+  7.6 Surrogate modelling
+  7.7 Data assimilation with machine learning
+  [INCLUDE FIGURE 2: Physics-Informed Neural Network (PINN) Coupling Flowchart Script]
+Section 8. Explainable AI for Climate Science (750 words)
+  8.1 Why interpretability matters (Scientific trust vs black box)
+  8.2 Feature importance
+  8.3 SHAP and related approaches (KernelSHAP, DeepSHAP)
+  8.4 Local versus global explanations
+  8.5 Physical interpretation of learned relationships
+  8.6 Avoiding misleading explanations
+  [INCLUDE TABLE 2: Comparative Evaluation of XAI Methods in Climate Analysis]
+Section 9. Uncertainty and Reliability (700 words)
+  9.1 Sources of uncertainty in climate prediction (Aleatoric vs Epistemic)
+  9.2 Data uncertainty
+  9.3 Model uncertainty
+  9.4 Predictive uncertainty
+  9.5 Ensemble approaches (Deep Ensembles)
+  9.6 Probabilistic forecasting (Bayesian Neural Networks, Evidential Deep Learning)
+  9.7 Calibration and reliability assessment (Reliability diagrams, CRPS metric)
+Section 10. Evaluating AI-Based Climate Models (700 words)
+  10.1 Training, validation and independent testing
+  10.2 Spatial and temporal cross-validation (Block spatial CV)
+  10.3 Regression and classification metrics (RMSE, MAE, Threat Score)
+  10.4 Forecast skill (Anomaly Correlation Coefficient - ACC)
+  10.5 Extreme-event performance (Tail performance metrics)
+  10.6 Physical consistency
+  10.7 Generalization to unseen climate regimes
+Section 11. Climate Change Mitigation and Adaptation (650 words)
+  11.1 Energy and emissions forecasting
+  11.2 Renewable-energy prediction
+  11.3 Carbon-emission modelling
+  11.4 Water-resource management
+  11.5 Agricultural adaptation
+  11.6 Climate-risk assessment
+  11.7 Early-warning systems
+Section 12. Limitations, Risks and Responsible Climate AI (550 words)
+  12.1 Data scarcity and geographical imbalance
+  12.2 Dataset bias
+  12.3 Overfitting and spurious correlations
+  12.4 Extrapolation beyond the training climate
+  12.5 Interpretability
+  12.6 Reproducibility
+  12.7 Computational and energy costs of AI
+  12.8 Physical plausibility and scientific trust
+Section 13. Emerging Directions (450 words)
+  13.1 Foundation models for Earth-system science (ClimaX, Spherical DyNets)
+  13.2 Multimodal climate AI
+  13.3 AI-assisted Earth-system modelling
+  13.4 Physics–AI co-modelling
+  13.5 Probabilistic and uncertainty-aware AI
+  13.6 AI for compound climate hazards
+  13.7 Toward decision-oriented climate intelligence
+Section 14. Conclusions (350 words)
+
+[MATHEMATICAL FORMULATIONS TO INCLUDE]
+1. Advection-Diffusion Governing Equation & PINN Loss:
+   $\frac{\partial C}{\partial t} + \mathbf{u} \cdot \nabla C = D \nabla^2 C + S$
+   Residual formulation: $R(x,y,z,t; \theta) = \frac{\partial \hat{C}}{\partial t} + \mathbf{u} \cdot \nabla \hat{C} - D \nabla^2 \hat{C} - S$
+2. Anomaly Correlation Coefficient (ACC):
+   $\text{ACC} = \frac{\sum (f - \bar{f})(o - \bar{o})}{\sqrt{\sum (f - \bar{f})^2 \sum (o - \bar{o})^2}}$
+
+Execute all sections in deep technical detail.
